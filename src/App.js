@@ -1,7 +1,9 @@
 import React from "react";
-import SearchBox from "./components/SearchBox";
 import "./App.css";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import HomeScreen from "./screens/HomeScreen";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -9,17 +11,15 @@ function App() {
       <Router>
         <div className="grid-container">
           <header className="row">
-            <div>
-              <div>
-                <img className="Bitmap" src="./assets/logo.jpg" alt="logo" />
-                <SearchBox />
-              </div>
-            </div>
+            <Navbar />
           </header>
+          <main>
+            <HomeScreen />
+          </main>
+          <footer>
+            <Footer />
+          </footer>
         </div>
-        <main>
-          
-        </main>
       </Router>
     </div>
   );

@@ -18,56 +18,33 @@ body {
   display: grid;
   grid-template-areas:
     "header"
-    "main";
-    grid-template-columns: 1fr;
-    grid-template-rows: 5rem 1fr 5rem;
-    height: 100%;
+    "main"
+    "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem 1fr 5rem;
+  height: 100%;
 }
 header {
   grid-area: header;
-  background-color: rgb(255, 255, 255);
-  position: sticky;
-  top: 0;
+  width: 1440px;
+  height: 96px;
+  margin: 0 0 32px;
+  padding: 20px 41px 24px 28px;
+  box-shadow: 0 4px 4px 0 rgba(127, 127, 127, 0.19);
+  background-color: #fff;
 }
 main {
   grid-area: main;
   padding: 1rem;
 }
-/* Header */
-header a {
-  color: #000041;
-  padding: 1rem;
+footer {
+  grid-area: footer;
+  width: 1440px;
+  height: 91px;
+  margin: 27px 0 0;
+  padding: 37px 24px 36px 947px;
+  background-color: #575757;
 }
-a.brand {
-  color: #000041;
-  font-size: 3rem;
-  font-weight: bold;
-}
-.badge {
-  background-color: #f02020;
-  color: #000041;
-  border-radius: 50%;
-  padding: 0.2rem 0.7rem;
-  font-size: 1.4rem;
-  margin-left: 0.2rem;
-}
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-.row.center {
-  justify-content: center;
-}
-.row.top {
-  align-items: flex-start;
-}
-
-.row.start {
-  justify-content: flex-start;
-}
-
 /* Search */
 .search input {
   width: 189px;
@@ -76,12 +53,33 @@ a.brand {
   padding: 7px 9.5px 10px 13px;
   border: solid 1px #eee;
 }
-
 .Bitmap {
   width: 162px;
   height: 52px;
   margin: 0 16px 0 0;
 }
-
-
-
+.Copyright-Dassault-A {
+  width: 469px;
+  height: 18px;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #fff;
+}
+/* Card */
+.card {
+  width: 340px;
+  height: 191px;
+  margin: 69px 20px 20px 10px;
+  padding: 5px 0 0;
+}
+.card-body {
+  padding: 1rem;
+}
+.card-body > * {
+  margin-bottom: 0.5rem;
+}
